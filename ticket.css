@@ -1,0 +1,129 @@
+body {
+      font-family: 'Righteous';
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #1A3C34;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 24px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 30px 20px 80px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #FFFFFF;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .mall-info {
+      padding: 20px;
+    }
+
+    .mall-info h2 {
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+
+    .empty-message {
+      font-size: 18px;
+      color: #777;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer {
+      padding: 20px;
+      background-color: #C2A661;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .ticket-section {
+      margin-bottom: 40px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+
+    .ticket {
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 16px;
+    }
+
+    .ticket h2 {
+      margin: 0 0 6px;
+      font-size: 18px;
+    }
+
+    .ticket p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+
+    .cancel-button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #8B5A2B;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .cancel-button:hover {
+      background: #a8642e;
+    }
+
+    .empty {
+      text-align: center;
+      font-style: italic;
+      color: #777;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: #ffffff;
+      box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .nav-item {
+      text-align: center;
+      font-size: 20px;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .nav-item.active {
+      color: #007BFF;
+      font-weight: 600;
+    }

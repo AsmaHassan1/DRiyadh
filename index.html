@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover Riyadh</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+  <h1>Discover Riyadh</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="Discover.html">Categories</a>
+    <a href="Organizer.html">Organizer</a>
+    <a href="#contact">Contact</a>
+    <button class="button" onclick="openPopup('signUpPopup')">Sign Up</button>
+    <button class="button" onclick="openPopup('logInPopup')">Log In</button>
+
+    <div class="profile-container">
+      <i class="fas fa-user-circle profile-icon" onclick="toggleProfileWidget()"></i>
+      <div class="profile-widget" id="profileWidget">
+        <h3>User Profile</h3>
+        <p><strong>Name:</strong> <span id="profileName">John Doe</span></p>
+        <p><strong>Email:</strong> <span id="profileEmail">john.doe@example.com</span></p>
+        <button class="button" onclick="openPopup('editProfilePopup')">Edit My Profile</button>
+        <button class="button" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section id="about" class="container">
+    <h2>About Us</h2>
+    <p>A simple platform to discover and manage tourism events in Riyadh.</p>
+  </section>
+
+  <section id="events" class="container">
+    <h2>Upcoming Events</h2>
+    <div class="events-container">
+      <div class="event-widget">
+        <div class="event-image" style="background-image:url('https://i.postimg.cc/9f5zC7gj/Cultural.jpg');"></div>
+        <div class="event-info">
+          <h3>Cultural Festival</h3>
+          <p>Date: June 10th</p>
+          <button class="button">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Sign Up Popup -->
+<div id="signUpPopup" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Sign Up</h2>
+    <form id="signUpForm" novalidate>
+      <div class="field"><input id="signupName" placeholder="Name" required></div>
+      <div class="field"><input id="signupEmail" type="email" placeholder="Email" required></div>
+      <div class="field"><input id="signupAge" type="number" placeholder="Age" min="1" max="120" required></div>
+      <div class="field"><input id="signupPassword" type="password" placeholder="Password" required></div>
+      <div class="field"><input id="signupConfirm" type="password" placeholder="Confirm Password" required></div>
+      <div id="signupError" class="error"></div>
+      <div id="signupSuccess" class="success"></div>
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="button" class="close-btn" data-close="signUpPopup">Close</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Log In Popup -->
+<div id="logInPopup" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Log In</h2>
+    <form id="logInForm" novalidate>
+      <div class="field"><input id="loginEmail" type="email" placeholder="Email" required></div>
+      <div class="field"><input id="loginPassword" type="password" placeholder="Password" required></div>
+      <div id="loginError" class="error"></div>
+      <div class="buttons">
+        <button type="submit">Login</button>
+        <button type="button" class="close-btn" data-close="logInPopup">Close</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Edit Profile Popup -->
+<div id="editProfilePopup" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Edit Profile</h2>
+    <div class="field"><input id="editName" placeholder="Name"></div>
+    <div class="field"><input id="editEmail" type="email" placeholder="Email"></div>
+    <div class="buttons">
+      <button onclick="saveProfile()">Save</button>
+      <button type="button" class="close-btn" data-close="editProfilePopup">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Chatbot -->
+ 
+  <div class="ai-icon" onclick="toggleChatbot()">
+    <i class="fas fa-robot"></i>
+  </div>
+  <div class="chatbot-window" id="chatbotWindow" style="display:none;">
+    <div class="chatbot-header">AI Assistant</div>
+    <div class="chat-log" id="chatLog">
+      <div class="message bot-message">Welcome! How can I help you today?</div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+      <button class="send-button" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+<footer>
+  <p>&copy; 2025 Discover Riyadh. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

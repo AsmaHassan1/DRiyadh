@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shopping Malls - Discover Riyadh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+
+  <header>
+    <h1>Shopping Malls</h1>
+  </header>
+
+  <div class="grid">
+    <div class="card" data-id="nakheel" data-title="Al Nakheel Mall">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="https://i.postimg.cc/43Sn2JDb/02-8-jpg-webp-1080x610-c.webp" alt="Al Nakheel Mall" class="mall-img" />
+      <div class="mall-info">
+        <h2>Al Nakheel Mall</h2>
+        <a href="https://maps.app.goo.gl/P5EYj2XRvc2F6ADd9" target="_blank">
+          <p class="location">📍 Located in North Riyadh</p>
+        </a>
+        <p class="description">A premier shopping destination with a variety of stores and dining options.</p>
+      </div>
+    </div>
+
+    <div class="card" data-id="smaa" data-title="Smaa Gallery">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="https://i.postimg.cc/25jNbMSs/2024-01-04.webp" alt="Smaa Gallery" class="mall-img" />
+      <div class="mall-info">
+        <h2>Smaa Gallery</h2>
+        <a href="https://maps.app.goo.gl/6V92wxWpM61tT7bg9" target="_blank">
+          <p class="location">📍 Located in North Riyadh</p>
+        </a>
+        <p class="description">Luxury commercial building with premium services.</p> 
+      </div>
+    </div>
+
+    <div class="card" data-id="kingdom" data-title="Kingdom Centre Mall">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="https://i.postimg.cc/Zq0H9x6b/kingdom-centre-tower-mall.png" alt="Kingdom Centre Mall" class="mall-img" />
+      <div class="mall-info">
+        <h2>Kingdom Centre Mall</h2>
+        <a href="https://maps.app.goo.gl/8TQYHAuqZPL4JGA57" target="_blank">
+          <p class="location">📍 Located in Olaya</p>
+        </a>
+        <p class="description">Iconic mall with luxury brands and stunning views from the sky bridge.</p>
+      </div>
+    </div>
+
+    <div class="card" data-id="riyadhpark" data-title="Riyadh Park">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+      <img src="https://i.postimg.cc/c4BzR63j/New-Project-17.jpg" alt="Riyadh Park" class="mall-img" />
+      <div class="mall-info">
+        <h2>Riyadh Park</h2>
+        <a href="https://maps.app.goo.gl/J16BDeVK6Cx9h8kLA" target="_blank">
+          <p class="location">📍 Located in North Riyadh</p>
+        </a>
+        <p class="description">A modern shopping experience with outdoor spaces and dining.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-nav" role="navigation" aria-label="Bottom navigation">
+    <a href="index.html" class="nav-item active" aria-current="page">🏠<span>Home</span></a>
+    <a href="Ticket.html" class="nav-item">🎫<span>My Ticket</span></a>
+    <a href="Favourites.html" class="nav-item">❤️<span>Favourites</span></a>
+    <a href="https://www.google.com/maps/search/خريطة+الرياض+قوقل+ماب%E2%80%AD" class="nav-item">📍<span>Map</span></a>
+  </div>
+
+  <footer>
+    &copy; 2025 Discover Riyadh. All rights reserved.
+  </footer>
+
+  <script src="shopping.js"></script>
+</body>
+</html>

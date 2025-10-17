@@ -1,0 +1,205 @@
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Righteous';
+      background-color: #FAF8F5;
+      color: #1A3C34;
+      text-align: center;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      color: #0C6253;
+    }
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      padding: 0 20px 80px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: left;
+    }
+    .card {
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: default;
+      transition: box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .card:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .mall-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #C2A661;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+      }
+      .mall-info h2 {
+        font-size: 18px;
+      }
+      .mall-info p.location,
+      .mall-info p.description {
+        font-size: 13px;
+      }
+    }
+
+    .favorite-icon {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      font-size: 32px; /* زيادة الحجم */
+      color: #C2A661;
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 12px; /* زيادة المسافة حول الأيقونة */
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s, color 0.3s;
+      z-index: 2;
+    }
+
+    .favorite-icon:hover {
+      transform: scale(1.2);
+      color: #a88641;
+    }
+    .mall-info {
+      padding: 20px 24px 28px;
+      flex-grow: 1;
+    }
+    .mall-info h2 {
+      font-size: 22px;
+      margin: 0 0 8px;
+      color: #1A3C34;
+      font-weight: 600;
+    }
+    .mall-info p.location {
+      color: #0C6253;
+      font-weight: 600;
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+    .mall-info p.description {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.4;
+      margin: 0 0 15px;
+    }
+    .getting-there {
+      background-color: #E6F0ED;
+      border-radius: 12px;
+      padding: 14px 20px;
+      font-size: 14px;
+      color: #0C6253;
+      box-shadow: inset 0 0 6px rgba(12, 98, 83, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      cursor: default;
+      transition: background-color 0.3s ease;
+    }
+    .getting-there:hover {
+      background-color: #D0E6DB;
+    }
+    .metro-icon, .bus-icon {
+      width: 22px;
+      height: 22px;
+      fill: #0C6253;
+      flex-shrink: 0;
+    }
+    .separator {
+      width: 6px;
+      height: 6px;
+      background-color: #0C6253;
+      border-radius: 50%;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #C2A661;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background-color: #ffffff;
+      box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1000;
+    }
+    .nav-item {
+      text-align: center;
+      font-size: 20px;
+      color: #555;
+      text-decoration: none;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: color 0.3s, font-weight 0.3s;
+    }
+    .nav-item span {
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    .nav-item:hover {
+      color: #007BFF;
+    }
+    .nav-item.active {
+      color: #007BFF;
+      font-weight: 600;
+    }
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+      }
+      .mall-info h2 {
+        font-size: 18px;
+      }
+      .mall-info p.location,
+      .mall-info p.description,
+      .getting-there {
+        font-size: 13px;
+      }
+    }

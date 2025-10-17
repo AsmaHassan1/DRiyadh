@@ -1,0 +1,139 @@
+    :root {
+      --primary: #1E3F39;
+      --primary-dark: #0e2924;
+      --light-bg: #f9f8f4;
+      --card-bg: #ffffff;
+      --text: #1E3F39;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Righteous';
+      background: var(--light-bg);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: var(--primary);
+    }
+
+    .event-form {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .datetime-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .image-preview {
+      margin-top: 10px;
+      max-height: 200px;
+    }
+
+    .search-box {
+      margin: 20px 0;
+      padding: 10px;
+      width: 100%;
+      font-size: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      margin-right: 10px;
+    }
+
+    button:hover {
+      background: var(--primary-dark);
+    }
+
+    .delete-btn {
+      background: #c0392b;
+    }
+
+    .edit-btn {
+      background: #f39c12;
+    }
+
+    .events-list {
+      display: grid;
+      gap: 20px;
+    }
+
+    .event-card {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .event-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .widget-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 20px 0 10px;
+      color: var(--primary);
+    }
+
+    .widget-event {
+      font-size: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

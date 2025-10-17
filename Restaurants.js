@@ -1,0 +1,32 @@
+function toggleFavorite(icon) {
+  const card = icon.closest('.card');
+  const id = card.dataset.id;
+  const title = card.dataset.title;
+
+  let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const index = favorites.findIndex(item => item.id === id);
+
+  if (index === -1) {
+    favorites.push({ id, title });
+    icon.classList.remove('fa-regular');
+    icon.classList.add('fa-solid');
+  } else {
+    favorites.splice(index, 1);
+    icon.classList.remove('fa-solid');
+    icon.classList.add('fa-regular');
+  }
+
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  document.querySelectorAll('.card').forEach(card => {
+    const id = card.dataset.id;
+    const icon = card.querySelector('.favorite-icon');
+    if (favorites.find(item => item.id === id)) {
+      icon.classList.remove('fa-regular');
+      icon.classList.add('fa-solid');
+    }
+  });
+});
