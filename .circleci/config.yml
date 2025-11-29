@@ -1,0 +1,23 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:20.4
+    steps:
+      - checkout
+      - run:
+          name: تثبيت الحزم
+          command: npm install
+      - run:
+          name: تشغيل الاختبارات
+          command: npm test
+      - run:
+          name: فحص HTML
+          command: npx html-validate "**/*.html"
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
