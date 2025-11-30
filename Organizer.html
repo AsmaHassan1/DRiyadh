@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Organizer</title>
-  <link rel="stylesheet" href="Organizer.css" />
+  <link rel="stylesheet" href="Organizer.css">
 </head>
+
 <body>
+
   <div class="container">
     <h1>Event Organizer</h1>
 
     <form class="event-form" id="eventForm">
       <h2>Add New Event</h2>
+
       <div class="form-group">
         <label for="eventName">Event Name:</label>
-        <input type="text" id="eventName" required />
+        <input type="text" id="eventName" required>
       </div>
 
       <div class="form-group">
         <label for="eventLocation">Location:</label>
-        <input type="text" id="eventLocation" required />
+        <input type="text" id="eventLocation" required>
       </div>
 
       <div class="form-group">
@@ -28,17 +31,17 @@
       </div>
 
       <div class="form-group">
-        <label>Date & Time:</label>
+        <label>Date &amp; Time:</label>
         <div class="datetime-group">
-          <input type="datetime-local" id="startTime" required />
-          <input type="datetime-local" id="endTime" required />
+          <input type="datetime-local" id="startTime" required>
+          <input type="datetime-local" id="endTime" required>
         </div>
       </div>
 
       <div class="form-group">
         <label for="eventImage">Event Image:</label>
-        <input type="file" id="eventImage" accept="image/*" />
-        <img id="imagePreview" class="image-preview" src="#" alt="Image Preview" style="display: none;" />
+        <input type="file" id="eventImage" accept="image/*">
+        <img id="imagePreview" class="image-preview" src="#" alt="Image Preview" style="display: none;">
       </div>
 
       <button type="submit">Save Event</button>
@@ -47,7 +50,12 @@
     <input type="text" id="searchInput" class="search-box" placeholder="Search events by name...">
 
     <div class="widget-title">Available Events</div>
+
     <div id="eventWidget"></div>
 
     <div class="events-list" id="eventsList"></div>
+
   </div>
+
+</body>
+</html>
