@@ -1,125 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Restaurants - Discover Riyadh</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="Restaurants.css">
 </head>
+
 <body>
 
-   <header>
+  <header>
     <h1>Restaurants</h1>
   </header>
 
   <div class="grid">
 
     <div class="card" data-id="nozomi" data-title="Nozomi Restaurant">
-      <img src="https://i.postimg.cc/k57FJmWX/Nozomi.jpg" alt="Nozomi Restaurant" class="mall-img" />
+      <img src="https://i.postimg.cc/k57FJmWX/Nozomi.jpg" alt="Nozomi Restaurant" class="mall-img">
       <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
 
       <div class="mall-info">
         <h2>Nozomi Restaurant</h2>
-        <p><strong>📍 Olaya District</strong> <a href="https://maps.app.goo.gl/CPA1ZvGHszr2QCm6A" target="_blank" rel="noopener noreferrer">View on Map</a></p>
+        <p>
+          <strong>📍 Olaya District</strong>
+          <a href="https://maps.app.goo.gl/CPA1ZvGHszr2QCm6A" target="_blank" rel="noopener noreferrer">View on Map</a>
+        </p>
 
         <p class="description">Fine dining Japanese cuisine with authentic flavors and sushi specialties.</p>
-        <div class="getting-there" aria-label="Getting there by metro" title="Nearest metro station and walking distance">
-          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10V10H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+
+        <div class="getting-there" title="Nearest metro station and walking distance">
+          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10V10H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path>
           </svg>
           Nearest Metro: Alinma Bink Station - 11 mins walk
         </div>
+
         <div class="reviews">
           <strong>Reviews:</strong>
-          <span class="rating">★★★★★</span> Excellent sushi and ambiance!<br />
+          <span class="rating">★★★★★</span> Excellent sushi and ambiance!<br>
           <span class="rating">★★★★☆</span> Great service but a bit pricey.
         </div>
       </div>
     </div>
 
     <div class="card" data-id="spazio" data-title="Spazio Restaurant">
-      <img src="https://i.postimg.cc/0y6SfNx4/Spazio.jpg" alt="Spazio Restaurant" class="mall-img" />
+      <img src="https://i.postimg.cc/0y6SfNx4/Spazio.jpg" alt="Spazio Restaurant" class="mall-img">
       <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
 
       <div class="mall-info">
         <h2>Spazio Restaurant</h2>
-        <p><strong>📍Tahlia Street</strong> <a href="https://maps.app.goo.gl/1iX8N38r3HCMPZce9" target="_blank" rel="noopener noreferrer">View on Map</a></p>
+        <p>
+          <strong>📍 Tahlia Street</strong>
+          <a href="https://maps.app.goo.gl/1iX8N38r3HCMPZce9" target="_blank" rel="noopener noreferrer">View on Map</a>
+        </p>
 
         <p class="description">Italian dining experience with classic pasta, pizza, and elegant ambiance.</p>
-        <div class="getting-there" aria-label="Getting there by metro" title="Nearest metro station and walking distance">
-          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10V10H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+
+        <div class="getting-there" title="Nearest metro station and walking distance">
+          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10v1.5H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path>
           </svg>
           Nearest Metro: Al Urubah Station - 9 mins walk
         </div>
+
         <div class="reviews">
           <strong>Reviews:</strong>
-          <span class="rating">★★★★☆</span> Authentic Italian taste.<br />
+          <span class="rating">★★★★☆</span> Authentic Italian taste.<br>
           <span class="rating">★★★☆☆</span> Nice place but slow service.
         </div>
       </div>
     </div>
 
     <div class="card" data-id="blacktop" data-title="Black Top Restaurant">
-      <img src="https://i.postimg.cc/BnZHRGDT/Black-Tap-Riyadh.jpg" alt="Black Top" class="mall-img" />
+      <img src="https://i.postimg.cc/BnZHRGDT/Black-Tap-Riyadh.jpg" alt="Black Top" class="mall-img">
       <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
 
       <div class="mall-info">
         <h2>Black Top Restaurant</h2>
-        <p><strong>📍KAFD</strong> <a href="https://maps.app.goo.gl/MKiGGdBamZNhAQmo7" target="_blank" rel="noopener noreferrer">View on Map</a></p>
+        <p>
+          <strong>📍 KAFD</strong>
+          <a href="https://maps.app.goo.gl/MKiGGdBamZNhAQmo7" target="_blank" rel="noopener noreferrer">View on Map</a>
+        </p>
 
         <p class="description">Modern American spot for coffee, light meals, and celebrations.</p>
-        <div class="getting-there" aria-label="Getting there by metro" title="Nearest metro station and walking distance">
-          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10V10H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+
+        <div class="getting-there" title="Nearest metro station and walking distance">
+          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10v1.5H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path>
           </svg>
           Nearest Metro: KAFD - 6 mins walk
         </div>
+
         <div class="reviews">
           <strong>Reviews:</strong>
-          <span class="rating">★★★★★</span> Amazing flavors and friendly staff.<br />
+          <span class="rating">★★★★★</span> Amazing flavors and friendly staff.<br>
           <span class="rating">★★★★☆</span> Good value for money.
         </div>
       </div>
     </div>
 
     <div class="card" data-id="alnajd" data-title="Al Najd Village">
-      <img src="https://i.postimg.cc/G23g9YwN/najd-village-3-1667456719.webp" alt="Al Najd Village" class="mall-img" />
+      <img src="https://i.postimg.cc/G23g9YwN/najd-village-3-1667456719.webp" alt="Al Najd Village" class="mall-img">
       <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
 
       <div class="mall-info">
         <h2>Al Najd Village</h2>
-        <p><strong>📍King Fahad Road </strong> <a href="https://maps.app.goo.gl/ob2d58ZxGKprvUzF9" target="_blank" rel="noopener noreferrer">View on Map</a></p>
+
+        <p>
+          <strong>📍 King Fahad Road</strong>
+          <a href="https://maps.app.goo.gl/ob2d58ZxGKprvUzF9" target="_blank" rel="noopener noreferrer">View on Map</a>
+        </p>
 
         <p class="description">Traditional Saudi Arabian dishes served in an authentic village setting.</p>
-        <div class="getting-there" aria-label="Getting there by metro" title="Nearest metro station and walking distance">
-          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10V10H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+
+        <div class="getting-there" title="Nearest metro station and walking distance">
+          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10v1.5H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path>
           </svg>
           Nearest Metro: King Fahad Station - 9 mins walk
         </div>
+
         <div class="reviews">
           <strong>Reviews:</strong>
-          <span class="rating">★★★★☆</span> Great traditional food.<br />
+          <span class="rating">★★★★☆</span> Great traditional food.<br>
           <span class="rating">★★★★☆</span> Warm atmosphere and nice staff.
         </div>
       </div>
     </div>
 
   </div>
-  <!-- Bottom navigation -->
-  <div class="bottom-nav" role="navigation" aria-label="Bottom navigation">
+
+  <nav class="bottom-nav" aria-label="Bottom navigation">
     <a href="index.html" class="nav-item">🏠<span>Home</span></a>
     <a href="Ticket.html" class="nav-item">🎫<span> My Ticket</span></a>
     <a href="Favourites.html" class="nav-item">❤️<span>Favourites</span></a>
-    <a href="https://www.google.com/maps/search/%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+%D9%82%D9%88%D9%82%D9%84+%D9%85%D8%A7%D8%A8%E2%80%AD/@24.7210234,47.9438096,8z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" class="nav-item active" aria-current="page">📍<span>Map</span></a>
-  </div>
+    <a href="https://www.google.com/maps/search/%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+%D9%82%D9%88%D9%82%D9%84+%D9%85%D8%A7%D8%A8" class="nav-item active" aria-current="page">📍<span>Map</span></a>
+  </nav>
 
-
-  <footer><br><br><br><br><br><br><br><br>
+  <footer>
+    <br><br>
     &copy; 2025 Discover Riyadh. All rights reserved.
   </footer>
 
   <script src="Restaurants.js"></script>
+
 </body>
 </html>
+

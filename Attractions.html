@@ -3,49 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <title>Attractions - Discover Riyadh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="attractions.css">
   <script defer src="attractions.js"></script>
 </head>
+
 <body>
 
-<header>
-  <h1>Attractions</h1>
-</header>
+  <header>
+    <h1>Attractions</h1>
+  </header>
 
-<div class="grid">
+  <div class="grid">
 
-  <div class="card" data-id="masmak-fort" data-title="Masmak Fort">
-    <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
-    <img src="https://i.postimg.cc/prqcbHtH/9-al-masmak-palace-museum-riyadh-province.jpg" alt="Masmak Fort" class="mall-img">
-    <div class="mall-info">
-      <h2>Masmak Fort</h2>
-      <a href="https://maps.app.goo.gl/j4C3G7QAp51JTTCM6" target="_blank"><p class="location">📍 Old Riyadh</p></a>
-      <p class="description">Historic mud-brick fort known for its role in Saudi history.</p>
-      <div class="getting-there" role="region" aria-label="Getting there by metro" title="Nearest metro station and walking distance">
-        <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10V10H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
-        </svg>
-        Nearest Metro: Qasr Al Hokm - 10 mins walk
+    <!-- Masmak Fort -->
+    <div class="card" data-id="masmak-fort" data-title="Masmak Fort">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+
+      <img src="https://i.postimg.cc/prqcbHtH/9-al-masmak-palace-museum-riyadh-province.jpg" alt="Masmak Fort" class="mall-img">
+
+      <div class="mall-info">
+        <h2>Masmak Fort</h2>
+
+        <a href="https://maps.app.goo.gl/j4C3G7QAp51JTTCM6" target="_blank">
+          <p class="location">📍 Old Riyadh</p>
+        </a>
+
+        <p class="description">Historic mud-brick fort known for its role in Saudi history.</p>
+
+        <div class="getting-there" title="Nearest metro station">
+          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10V10H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+          </svg>
+          Nearest Metro: Qasr Al Hokm — 10 mins walk
+        </div>
       </div>
     </div>
+
+    <!-- National Museum -->
+    <div class="card" data-id="national-museum" data-title="National Museum">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+
+      <img src="https://i.postimg.cc/GtYnd6tS/National-Museum.jpg" alt="National Museum" class="mall-img">
+
+      <div class="mall-info">
+        <h2>National Museum</h2>
+
+        <a href="https://maps.app.goo.gl/eC8zPY1URptxM9ok7" target="_blank">
+          <p class="location">📍 King Abdulaziz Historical Center</p>
+        </a>
+
+        <p class="description">Museum showcasing the rich history and culture of Saudi Arabia.</p>
+
+        <div class="getting-there" title="Nearest metro station">
+          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2zM7 10v-1.5h10V10H7zm5 7c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+          </svg>
+          Nearest Metro: National Museum — 7 mins walk
+        </div>
+      </div>
+    </div>
+
+    <!-- Al Turaif -->
+    <div class="card" data-id="al-turaif" data-title="Al-Turaif Historic District">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+
+      <img src="https://i.postimg.cc/yxprZP5C/at-turaif.jpg" alt="Al-Turaif Historic District" class="mall-img">
+
+      <div class="mall-info">
+        <h2>Al-Turaif Historic District</h2>
+
+        <a href="https://maps.app.goo.gl/enMiDyBGb2Cw1JQXA" target="_blank">
+          <p class="location">📍 Diriyah</p>
+        </a>
+
+        <p class="description">UNESCO World Heritage site featuring historic mud-brick architecture.</p>
+
+        <div class="getting-there" title="Nearest metro + shuttle bus">
+          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2z"/>
+          </svg>
+
+          <span>Diriyah Station</span>
+
+          <div class="separator"></div>
+
+          <svg class="bus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 16c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h16v11H4z"/>
+          </svg>
+
+          <span>Shuttle Bus available</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Samouka -->
+    <div class="card" data-id="samouka" data-title="Samouka">
+      <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
+
+      <img src="https://i.postimg.cc/SKdQJgCx/rami0086.jpg" alt="Samouka" class="mall-img">
+
+      <div class="mall-info">
+        <h2>Samouka - Saudi Museum of Contemporary Art</h2>
+
+        <a href="https://maps.app.goo.gl/hNJYcZVGNPtEiCWN9" target="_blank">
+          <p class="location">📍 Riyadh</p>
+        </a>
+
+        <p class="description">Contemporary art museum featuring modern Saudi and international artists.</p>
+
+        <div class="getting-there" title="Nearest metro station">
+          <svg class="metro-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 4.69 5 8.25v7.5C5 18.31 7.69 21 11.25 21H12c3.87 0 7-2.69 7-6.25v-7.5C19 4.69 16.31 2 12 2z"/>
+          </svg>
+          Nearest Metro: Al Olaya Station — 12 mins walk
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <!-- Repeat similar fixes for other cards -->
-  <!-- For brevity, I won’t paste all cards, but apply the same: remove self-closing img slashes, add role="region" to getting-there divs, remove trailing spaces -->
+  <nav class="bottom-nav" aria-label="Bottom navigation">
+    <a href="index.html" class="nav-item">🏠<span>Home</span></a>
+    <a href="Ticket.html" class="nav-item">🎫<span>My Ticket</span></a>
+    <a href="Favourites.html" class="nav-item">❤️<span>Favourites</span></a>
+    <a href="#" class="nav-item active" aria-current="page">📍<span>Map</span></a>
+  </nav>
 
-</div>
+  <footer>
+    &copy; 2025 Discover Riyadh. All rights reserved.
+  </footer>
 
-<nav class="bottom-nav" aria-label="Bottom navigation">
-  <a href="index.html" class="nav-item">🏠<span>Home</span></a>
-  <a href="Ticket.html" class="nav-item">🎫<span>My Ticket</span></a>
-  <a href="Favourites.html" class="nav-item">❤️<span>Favourites</span></a>
-  <a href="https://www.google.com/maps/search/%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9+%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6+%D9%82%D9%88%D9%82%D9%84+%D9%85%D8%A7%D8%A8%E2%80%AD/@24.7210234,47.9438096,8z" class="nav-item active" aria-current="page">📍<span>Map</span></a>
-</nav>
-
-<footer>
-  &copy; 2025 Discover Riyadh. All rights reserved.
-</footer>
-
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>

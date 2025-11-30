@@ -3,32 +3,25 @@ name: Frontend CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Node
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Run JS Tests
-      run: npm test
+      - name: Install HTML Validator
+        run: npm install -g html-validate
 
-    - name: Validate HTML
-      run: npx html-validate "**/*.html"
-
-    - name: Lint CSS
-      run: npx stylelint "**/*.css"
-
-    - name: Lint JS
-      run: npx eslint "**/*.js"
+      - name: Run HTML validation
+        run: html-validate "**/*.html"

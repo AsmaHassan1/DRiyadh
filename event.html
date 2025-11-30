@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Events - Discover Riyadh</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="Events.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="Events.css">
 </head>
+
 <body>
 
   <header>Tourist Events</header>
 
   <section class="events-slider">
+
+    <!-- EVENT 1 -->
     <div class="event-card" data-event-id="1">
-      <div style="position: relative;">
+      <div class="image-wrapper">
         <span class="tag">Popular</span>
-        <img src="https://i.postimg.cc/bvyMc75V/eid.jpg" alt="Eid Al Adha" />
+        <img src="https://i.postimg.cc/bvyMc75V/eid.jpg" alt="Eid Al Adha">
         <div class="date-box">🗓 June 6 - 9</div>
       </div>
+
       <div class="event-info">
         <span class="category">Music</span>
         <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
         <h2>Eid Al Adha</h2>
         <p>Eid Al Adha, the Festival of Sacrifice, is celebrated on the 10th of Dhu al-Hijjah.</p>
       </div>
-      <button class="book-button">Book Ticket</button>
+
+      <button class="book-button" type="button">Book Ticket</button>
+
       <div class="reviews">
         <h3>User Reviews</h3>
         <div class="userReviews"></div>
-        <button class="review-button">Leave a Review</button>
+        <button class="review-button" type="button">Leave a Review</button>
       </div>
     </div>
 
+    <!-- EVENT 2 -->
     <div class="event-card" data-event-id="2">
-      <div style="position: relative;">
+      <div class="image-wrapper">
         <span class="tag">Family</span>
-        <img src="https://i.postimg.cc/15WjKvJh/zoo.jpg" alt="Zoo Event" />
+        <img src="https://i.postimg.cc/15WjKvJh/zoo.jpg" alt="Zoo Event">
         <div class="date-box">🗓 June 1 - 2</div>
       </div>
+
       <div class="event-info">
         <span class="category">Outdoor</span>
         <i class="fa-regular fa-heart favorite-icon" onclick="toggleFavorite(this)"></i>
         <h2>Visit the Zoo</h2>
         <p>Explore wild animals and enjoy an educational and fun family day at Riyadh Zoo.</p>
-        <p><strong>📍 Location:</strong> <a href="https://maps.app.goo.gl/DJxifYKmgd9LZzCs5" target="_blank" rel="noopener noreferrer">View on Map</a></p>
+        <p>
+          <strong>📍 Location:</strong>
+          <a href="https://maps.app.goo.gl/DJxifYKmgd9LZzCs5" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            View on Map
+          </a>
+        </p>
       </div>
-      <button class="book-button">Book Ticket</button>
+
+      <button class="book-button" type="button">Book Ticket</button>
+
       <div class="reviews">
         <h3>User Reviews</h3>
         <div class="userReviews"></div>
-        <button class="review-button">Leave a Review</button>
+        <button class="review-button" type="button">Leave a Review</button>
       </div>
     </div>
+
   </section>
 
   <div class="dots">
@@ -63,7 +81,11 @@
     <a href="index.html">🏠<span>Home</span></a>
     <a href="Ticket.html">🎫<span>My Ticket</span></a>
     <a href="Favourites.html">❤️<span>Favourites</span></a>
-    <a href="https://www.google.com/maps/search/خريطة+الرياض+قوقل+ماب%E2%80%AD" target="_blank" rel="noopener noreferrer">📍<span>Map</span></a>
+    <a href="https://www.google.com/maps/search/خريطة+الرياض+قوقل+ماب%E2%80%AD" 
+       target="_blank" 
+       rel="noopener noreferrer">
+      📍<span>Map</span>
+    </a>
   </div>
 
   <!-- Review Modal -->
@@ -78,9 +100,9 @@
         <span class="star">★</span>
         <span class="star">★</span>
       </div>
-      <input type="text" id="userName" placeholder="Your Name" required />
+      <input type="text" id="userName" placeholder="Your Name" required>
       <textarea id="userReview" rows="3" placeholder="Your Review" required></textarea>
-      <button id="submitReviewBtn">Submit</button>
+      <button id="submitReviewBtn" type="button">Submit</button>
     </div>
   </div>
 
@@ -89,12 +111,14 @@
     <div class="modal-content">
       <span class="close-btn">&times;</span>
       <h3>Book Ticket</h3>
-      <input type="text" id="bookName" placeholder="Your Name" required />
-      <input type="email" id="bookEmail" placeholder="Your Email" required />
-      <button id="confirmBookingBtn">Confirm Booking</button>
+      <input type="text" id="bookName" placeholder="Your Name" required>
+      <input type="email" id="bookEmail" placeholder="Your Email" required>
+      <button id="confirmBookingBtn" type="button">Confirm Booking</button>
     </div>
   </div>
 
   <script src="Events.js"></script>
+
 </body>
 </html>
+
